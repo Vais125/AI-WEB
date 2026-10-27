@@ -62,3 +62,29 @@ footer {
 footer a {
     color: var(--accent);
 }
+nav {
+    background: var(--panel);
+    text-align: center;
+    padding: 15px;
+    border-bottom: 2px solid var(--accent);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav a {
+    color: var(--text);
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 6px 4px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+    transition: color 0.2s;
+}
+
+nav a:hover,
+nav a.active {
+    color: var(--accent);
+    border-bottom: 2px solid var(--accent);
+}
